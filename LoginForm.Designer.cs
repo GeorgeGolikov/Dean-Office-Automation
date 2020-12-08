@@ -40,16 +40,16 @@
             "Декан",
             "Студент",
             "Методист"});
-            this.userTypeBox.Location = new System.Drawing.Point(302, 191);
+            this.userTypeBox.Location = new System.Drawing.Point(313, 193);
             this.userTypeBox.Name = "userTypeBox";
-            this.userTypeBox.Size = new System.Drawing.Size(121, 21);
+            this.userTypeBox.Size = new System.Drawing.Size(135, 21);
             this.userTypeBox.TabIndex = 0;
             this.userTypeBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(299, 175);
+            this.label1.Location = new System.Drawing.Point(310, 177);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 13);
             this.label1.TabIndex = 1;
@@ -58,11 +58,11 @@
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(322, 218);
+            this.buttonLogin.Location = new System.Drawing.Point(313, 220);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(75, 23);
+            this.buttonLogin.Size = new System.Drawing.Size(135, 23);
             this.buttonLogin.TabIndex = 2;
-            this.buttonLogin.Text = "Войти";
+            this.buttonLogin.Text = "Далее";
             this.buttonLogin.UseVisualStyleBackColor = true;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 

@@ -12,9 +12,20 @@ namespace course_project
 {
     public partial class MethodistForm : Form
     {
+        private string userID;
+        private string userFIO;
+
         public MethodistForm()
         {
             InitializeComponent();
+        }
+
+        public MethodistForm(string userID, string userFIO)
+        {
+            InitializeComponent();
+
+            this.userID = userID;
+            this.userFIO = userFIO;
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -58,6 +69,21 @@ namespace course_project
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox12_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

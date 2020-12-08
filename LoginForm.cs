@@ -30,22 +30,13 @@ namespace course_project
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             int userTypeIndex = userTypeBox.SelectedIndex;
-            switch(userTypeIndex)
+            if (userTypeIndex == -1)
             {
-                case 0:
-                    MessageBox.Show("Декан", " Внимание!", MessageBoxButtons.OK);
-                    break;
-                case 1:
-                    MessageBox.Show("Студент", " Внимание!", MessageBoxButtons.OK);
-                    break;
-                case 2:
-                    MessageBox.Show("Методист", " Внимание!", MessageBoxButtons.OK);
-                    break;
-                default:
-                    Console.WriteLine("Default case");
-                    MessageBox.Show("Пользователь не задан!", " Внимание!", MessageBoxButtons.OK);
-                    break;
+                MessageBox.Show("Пользователь не задан!", " Внимание!", MessageBoxButtons.OK);
+                return;
             }
+            LoginForm2 loginForm2 = new LoginForm2(userTypeIndex);
+            loginForm2.Show();         
         }
     }
 }

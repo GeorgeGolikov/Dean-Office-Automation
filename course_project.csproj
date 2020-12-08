@@ -46,16 +46,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DirectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorForm.Designer.cs">
+      <DependentUpon>DirectorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm2.Designer.cs">
+      <DependentUpon>LoginForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MethodistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MethodistForm.Designer.cs">
+      <DependentUpon>MethodistForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DirectorForm.resx">
+      <DependentUpon>DirectorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm2.resx">
+      <DependentUpon>LoginForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MethodistForm.resx">
+      <DependentUpon>MethodistForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +104,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dataSet.xsc">
+      <DependentUpon>dataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dataSet.xss">
+      <DependentUpon>dataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
