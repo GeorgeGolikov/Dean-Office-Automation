@@ -99,7 +99,7 @@ namespace course_project
                     pwdFromDB = (string) dataSet.Tables["Director"].Select("DirectorID = " + userID)[0]["Pwd"];
                     if (pwdFromBox.Equals(pwdFromDB))
                     {
-                        DirectorForm directorForm = new DirectorForm(userID, userFIO);
+                        DirectorForm directorForm = new DirectorForm(userID, userFIO, cn);
                         directorForm.Show();
                         return;
                     }
@@ -109,7 +109,7 @@ namespace course_project
                     pwdFromDB = (string) dataSet.Tables["Students"].Select("StudentID = " + userID)[0]["Pwd"];
                     if (pwdFromBox.Equals(pwdFromDB))
                     {
-                        StudentForm studentForm = new StudentForm(userID, userFIO);
+                        StudentForm studentForm = new StudentForm(userID, userFIO, cn);
                         studentForm.Show();
                         return;
                     }
@@ -119,7 +119,7 @@ namespace course_project
                     pwdFromDB = (string) dataSet.Tables["Methodists"].Select("MethodistID = " + userID)[0]["Pwd"];
                     if (pwdFromBox.Equals(pwdFromDB))
                     {
-                        MethodistForm methodistForm = new MethodistForm(userID, userFIO);
+                        MethodistForm methodistForm = new MethodistForm(userID, userFIO, cn);
                         methodistForm.Show();
                         return;
                     }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace course_project
 {
@@ -14,18 +15,22 @@ namespace course_project
     {
         private string userID;
         private string userFIO;
+        private OleDbConnection cn;
 
         public DirectorForm()
         {
             InitializeComponent();
         }
 
-        public DirectorForm(string userID, string userFIO)
+        public DirectorForm(string userID, string userFIO, OleDbConnection cn)
         {
             InitializeComponent();
 
             this.userID = userID;
             this.userFIO = userFIO;
+            this.cn = cn;
+
+            this.Text += " " + userFIO;
         }
 
         private void label25_Click(object sender, EventArgs e)
