@@ -32,62 +32,60 @@
             this.generalTab = new System.Windows.Forms.TabPage();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.statisticsTab = new System.Windows.Forms.TabPage();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.numBoysBox = new System.Windows.Forms.TextBox();
+            this.numGirlsBox = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dataGrid5 = new System.Windows.Forms.DataGrid();
+            this.more2FreeButton = new System.Windows.Forms.Button();
+            this.threeButton = new System.Windows.Forms.Button();
+            this.studsScholsButton = new System.Windows.Forms.Button();
+            this.mathPhysButton = new System.Windows.Forms.Button();
+            this.highestNumDropButton = new System.Windows.Forms.Button();
+            this.wantCGButton = new System.Windows.Forms.Button();
+            this.only45Button = new System.Windows.Forms.Button();
+            this.highScholButton = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.averageGradeBox = new System.Windows.Forms.TextBox();
+            this.groupsBox = new System.Windows.Forms.ComboBox();
+            this.studentsBox = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.requestsTab = new System.Windows.Forms.TabPage();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.dataGrid3 = new System.Windows.Forms.DataGrid();
+            this.reqList = new System.Windows.Forms.DataGridView();
+            this.dateBox = new System.Windows.Forms.DateTimePicker();
+            this.reqTypeBox = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.reqStatusBox = new System.Windows.Forms.ComboBox();
+            this.reqIdBox = new System.Windows.Forms.ComboBox();
+            this.setReqStatus = new System.Windows.Forms.Button();
             this.studentsTab = new System.Windows.Forms.TabPage();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.groupChangeButton = new System.Windows.Forms.Button();
+            this.groupList = new System.Windows.Forms.DataGridView();
+            this.date2Box = new System.Windows.Forms.DateTimePicker();
+            this.typeBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.orderNameBox = new System.Windows.Forms.TextBox();
+            this.sumBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.studentScholBox = new System.Windows.Forms.ComboBox();
+            this.setScholBut = new System.Windows.Forms.Button();
             this.label34 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dataGrid1 = new System.Windows.Forms.DataGrid();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dateBirthBox = new System.Windows.Forms.DateTimePicker();
+            this.fioBox = new System.Windows.Forms.TextBox();
+            this.group3Box = new System.Windows.Forms.ComboBox();
+            this.sexBox = new System.Windows.Forms.ComboBox();
+            this.newGroupBox = new System.Windows.Forms.ComboBox();
+            this.groups2Box = new System.Windows.Forms.ComboBox();
+            this.studentGroupBox = new System.Windows.Forms.ComboBox();
+            this.addStudentButton = new System.Windows.Forms.Button();
+            this.dropStudentButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -96,15 +94,14 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.methodistsTab = new System.Windows.Forms.TabPage();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.dataGrid6 = new System.Windows.Forms.DataGrid();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.methodistsList = new System.Windows.Forms.DataGridView();
+            this.dateBirthMeth = new System.Windows.Forms.DateTimePicker();
+            this.salaryBox = new System.Windows.Forms.TextBox();
+            this.methFioBox = new System.Windows.Forms.TextBox();
+            this.methTypeBox = new System.Windows.Forms.ComboBox();
+            this.methodistsBox = new System.Windows.Forms.ComboBox();
+            this.hireMeth = new System.Windows.Forms.Button();
+            this.dropMethodistButton = new System.Windows.Forms.Button();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -112,29 +109,33 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.tasksTab = new System.Windows.Forms.TabPage();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.dateTaskBox = new System.Windows.Forms.DateTimePicker();
+            this.causeTaskBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.sumTaskBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.students2Box = new System.Windows.Forms.ComboBox();
+            this.newTaskButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.dataGrid4 = new System.Windows.Forms.DataGrid();
+            this.dataSet = new course_project.dataSet();
+            this.sexMethBox = new System.Windows.Forms.ComboBox();
+            this.tasksList = new System.Windows.Forms.DataGridView();
+            this.mainGrid = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.generalTab.SuspendLayout();
             this.statisticsTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid5)).BeginInit();
             this.requestsTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reqList)).BeginInit();
             this.studentsTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupList)).BeginInit();
             this.methodistsTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.methodistsList)).BeginInit();
             this.tasksTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tasksList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -180,25 +181,24 @@
             // 
             // statisticsTab
             // 
-            this.statisticsTab.Controls.Add(this.textBox17);
-            this.statisticsTab.Controls.Add(this.textBox16);
+            this.statisticsTab.Controls.Add(this.mainGrid);
+            this.statisticsTab.Controls.Add(this.numBoysBox);
+            this.statisticsTab.Controls.Add(this.numGirlsBox);
             this.statisticsTab.Controls.Add(this.label24);
             this.statisticsTab.Controls.Add(this.label23);
-            this.statisticsTab.Controls.Add(this.button9);
-            this.statisticsTab.Controls.Add(this.button14);
-            this.statisticsTab.Controls.Add(this.button13);
-            this.statisticsTab.Controls.Add(this.button12);
-            this.statisticsTab.Controls.Add(this.button11);
-            this.statisticsTab.Controls.Add(this.button10);
-            this.statisticsTab.Controls.Add(this.button8);
-            this.statisticsTab.Controls.Add(this.button7);
-            this.statisticsTab.Controls.Add(this.button4);
-            this.statisticsTab.Controls.Add(this.dataGrid5);
+            this.statisticsTab.Controls.Add(this.more2FreeButton);
+            this.statisticsTab.Controls.Add(this.threeButton);
+            this.statisticsTab.Controls.Add(this.studsScholsButton);
+            this.statisticsTab.Controls.Add(this.mathPhysButton);
+            this.statisticsTab.Controls.Add(this.highestNumDropButton);
+            this.statisticsTab.Controls.Add(this.wantCGButton);
+            this.statisticsTab.Controls.Add(this.only45Button);
+            this.statisticsTab.Controls.Add(this.highScholButton);
             this.statisticsTab.Controls.Add(this.label22);
             this.statisticsTab.Controls.Add(this.label20);
-            this.statisticsTab.Controls.Add(this.textBox3);
-            this.statisticsTab.Controls.Add(this.comboBox9);
-            this.statisticsTab.Controls.Add(this.comboBox12);
+            this.statisticsTab.Controls.Add(this.averageGradeBox);
+            this.statisticsTab.Controls.Add(this.groupsBox);
+            this.statisticsTab.Controls.Add(this.studentsBox);
             this.statisticsTab.Controls.Add(this.label12);
             this.statisticsTab.Controls.Add(this.label21);
             this.statisticsTab.Controls.Add(this.label13);
@@ -210,21 +210,21 @@
             this.statisticsTab.Text = "Статистика";
             this.statisticsTab.UseVisualStyleBackColor = true;
             // 
-            // textBox17
+            // numBoysBox
             // 
-            this.textBox17.Location = new System.Drawing.Point(193, 384);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(33, 20);
-            this.textBox17.TabIndex = 47;
+            this.numBoysBox.Location = new System.Drawing.Point(193, 384);
+            this.numBoysBox.Name = "numBoysBox";
+            this.numBoysBox.ReadOnly = true;
+            this.numBoysBox.Size = new System.Drawing.Size(33, 20);
+            this.numBoysBox.TabIndex = 47;
             // 
-            // textBox16
+            // numGirlsBox
             // 
-            this.textBox16.Location = new System.Drawing.Point(193, 358);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(33, 20);
-            this.textBox16.TabIndex = 48;
+            this.numGirlsBox.Location = new System.Drawing.Point(193, 358);
+            this.numGirlsBox.Name = "numGirlsBox";
+            this.numGirlsBox.ReadOnly = true;
+            this.numGirlsBox.Size = new System.Drawing.Size(33, 20);
+            this.numGirlsBox.TabIndex = 48;
             // 
             // label24
             // 
@@ -250,96 +250,85 @@
             this.label23.TabIndex = 46;
             this.label23.Text = "Кол-во девочек";
             // 
-            // button9
+            // more2FreeButton
             // 
-            this.button9.Location = new System.Drawing.Point(259, 122);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(234, 23);
-            this.button9.TabIndex = 44;
-            this.button9.Text = "Больше 2 свободных дней в расписании";
-            this.button9.UseVisualStyleBackColor = true;
+            this.more2FreeButton.Location = new System.Drawing.Point(259, 122);
+            this.more2FreeButton.Name = "more2FreeButton";
+            this.more2FreeButton.Size = new System.Drawing.Size(234, 23);
+            this.more2FreeButton.TabIndex = 44;
+            this.more2FreeButton.Text = "Больше 2 свободных дней в расписании";
+            this.more2FreeButton.UseVisualStyleBackColor = true;
+            this.more2FreeButton.Click += new System.EventHandler(this.more2FreeButton_Click);
             // 
-            // button14
+            // threeButton
             // 
-            this.button14.Location = new System.Drawing.Point(259, 366);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(234, 37);
-            this.button14.TabIndex = 44;
-            this.button14.Text = "Сводка средних баллов";
-            this.button14.UseVisualStyleBackColor = true;
+            this.threeButton.Location = new System.Drawing.Point(259, 323);
+            this.threeButton.Name = "threeButton";
+            this.threeButton.Size = new System.Drawing.Size(234, 37);
+            this.threeButton.TabIndex = 44;
+            this.threeButton.Text = "Тройки, кроме тех, которые по математике";
+            this.threeButton.UseVisualStyleBackColor = true;
+            this.threeButton.Click += new System.EventHandler(this.threeButton_Click);
             // 
-            // button13
+            // studsScholsButton
             // 
-            this.button13.Location = new System.Drawing.Point(259, 323);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(234, 37);
-            this.button13.TabIndex = 44;
-            this.button13.Text = "Тройки, кроме тех, которые по математике";
-            this.button13.UseVisualStyleBackColor = true;
+            this.studsScholsButton.Location = new System.Drawing.Point(259, 278);
+            this.studsScholsButton.Name = "studsScholsButton";
+            this.studsScholsButton.Size = new System.Drawing.Size(234, 37);
+            this.studsScholsButton.TabIndex = 44;
+            this.studsScholsButton.Text = "Приказы на стипендию, если есть";
+            this.studsScholsButton.UseVisualStyleBackColor = true;
+            this.studsScholsButton.Click += new System.EventHandler(this.studsScholsButton_Click);
             // 
-            // button12
+            // mathPhysButton
             // 
-            this.button12.Location = new System.Drawing.Point(259, 278);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(234, 37);
-            this.button12.TabIndex = 44;
-            this.button12.Text = "Приказы на стипенидию, если есть";
-            this.button12.UseVisualStyleBackColor = true;
+            this.mathPhysButton.Location = new System.Drawing.Point(259, 194);
+            this.mathPhysButton.Name = "mathPhysButton";
+            this.mathPhysButton.Size = new System.Drawing.Size(234, 37);
+            this.mathPhysButton.TabIndex = 44;
+            this.mathPhysButton.Text = "Мат. | | Физ. встречается в расписании более 1 раза";
+            this.mathPhysButton.UseVisualStyleBackColor = true;
+            this.mathPhysButton.Click += new System.EventHandler(this.mathPhysButton_Click);
             // 
-            // button11
+            // highestNumDropButton
             // 
-            this.button11.Location = new System.Drawing.Point(259, 194);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(234, 37);
-            this.button11.TabIndex = 44;
-            this.button11.Text = "Мат. | | Физ. встречается в расписании более 1 раза";
-            this.button11.UseVisualStyleBackColor = true;
+            this.highestNumDropButton.Location = new System.Drawing.Point(259, 151);
+            this.highestNumDropButton.Name = "highestNumDropButton";
+            this.highestNumDropButton.Size = new System.Drawing.Size(234, 37);
+            this.highestNumDropButton.TabIndex = 44;
+            this.highestNumDropButton.Text = "Наибольшое кол-во желающих отчислиться";
+            this.highestNumDropButton.UseVisualStyleBackColor = true;
+            this.highestNumDropButton.Click += new System.EventHandler(this.highestNumDropButton_Click);
             // 
-            // button10
+            // wantCGButton
             // 
-            this.button10.Location = new System.Drawing.Point(259, 151);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(234, 37);
-            this.button10.TabIndex = 44;
-            this.button10.Text = "Наибольшое кол-во желающих отчислиться";
-            this.button10.UseVisualStyleBackColor = true;
+            this.wantCGButton.Location = new System.Drawing.Point(259, 93);
+            this.wantCGButton.Name = "wantCGButton";
+            this.wantCGButton.Size = new System.Drawing.Size(234, 23);
+            this.wantCGButton.TabIndex = 44;
+            this.wantCGButton.Text = "Желающие перейти в др. группу";
+            this.wantCGButton.UseVisualStyleBackColor = true;
+            this.wantCGButton.Click += new System.EventHandler(this.wantCGButton_Click);
             // 
-            // button8
+            // only45Button
             // 
-            this.button8.Location = new System.Drawing.Point(259, 93);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(234, 23);
-            this.button8.TabIndex = 44;
-            this.button8.Text = "Желающие перейти в др. группу";
-            this.button8.UseVisualStyleBackColor = true;
+            this.only45Button.Location = new System.Drawing.Point(259, 64);
+            this.only45Button.Name = "only45Button";
+            this.only45Button.Size = new System.Drawing.Size(234, 23);
+            this.only45Button.TabIndex = 44;
+            this.only45Button.Text = "Только отл-ки и хорош-ты";
+            this.only45Button.UseVisualStyleBackColor = true;
+            this.only45Button.Click += new System.EventHandler(this.only45Button_Click);
             // 
-            // button7
+            // highScholButton
             // 
-            this.button7.Location = new System.Drawing.Point(259, 64);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(234, 23);
-            this.button7.TabIndex = 44;
-            this.button7.Text = "Только отл-ки и хорош-ты";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(259, 35);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(234, 23);
-            this.button4.TabIndex = 44;
-            this.button4.Text = "Повышенная стипендия";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // dataGrid5
-            // 
-            this.dataGrid5.DataMember = "";
-            this.dataGrid5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dataGrid5.HeaderForeColor = System.Drawing.SystemColors.ControlText;
-            this.dataGrid5.Location = new System.Drawing.Point(505, 3);
-            this.dataGrid5.Name = "dataGrid5";
-            this.dataGrid5.Size = new System.Drawing.Size(290, 429);
-            this.dataGrid5.TabIndex = 43;
+            this.highScholButton.Location = new System.Drawing.Point(259, 35);
+            this.highScholButton.Name = "highScholButton";
+            this.highScholButton.Size = new System.Drawing.Size(234, 23);
+            this.highScholButton.TabIndex = 44;
+            this.highScholButton.Text = "Повышенная стипендия";
+            this.highScholButton.UseVisualStyleBackColor = true;
+            this.highScholButton.Click += new System.EventHandler(this.highScholButton_Click);
             // 
             // label22
             // 
@@ -357,30 +346,33 @@
             this.label20.TabIndex = 42;
             this.label20.Text = "Группы, где есть";
             // 
-            // textBox3
+            // averageGradeBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(90, 48);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 38;
+            this.averageGradeBox.Location = new System.Drawing.Point(90, 48);
+            this.averageGradeBox.Name = "averageGradeBox";
+            this.averageGradeBox.ReadOnly = true;
+            this.averageGradeBox.Size = new System.Drawing.Size(136, 20);
+            this.averageGradeBox.TabIndex = 38;
             // 
-            // comboBox9
+            // groupsBox
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(105, 320);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(121, 21);
-            this.comboBox9.TabIndex = 16;
+            this.groupsBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.groupsBox.FormattingEnabled = true;
+            this.groupsBox.Location = new System.Drawing.Point(105, 320);
+            this.groupsBox.Name = "groupsBox";
+            this.groupsBox.Size = new System.Drawing.Size(121, 21);
+            this.groupsBox.TabIndex = 16;
+            this.groupsBox.SelectedIndexChanged += new System.EventHandler(this.groupsBox_SelectedIndexChanged);
             // 
-            // comboBox12
+            // studentsBox
             // 
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(90, 12);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(100, 21);
-            this.comboBox12.TabIndex = 16;
-            this.comboBox12.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.studentsBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.studentsBox.FormattingEnabled = true;
+            this.studentsBox.Location = new System.Drawing.Point(90, 12);
+            this.studentsBox.Name = "studentsBox";
+            this.studentsBox.Size = new System.Drawing.Size(136, 21);
+            this.studentsBox.TabIndex = 16;
+            this.studentsBox.SelectedIndexChanged += new System.EventHandler(this.studentsBox_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -411,16 +403,16 @@
             // 
             // requestsTab
             // 
-            this.requestsTab.Controls.Add(this.dateTimePicker4);
-            this.requestsTab.Controls.Add(this.comboBox13);
-            this.requestsTab.Controls.Add(this.dataGrid3);
+            this.requestsTab.Controls.Add(this.reqList);
+            this.requestsTab.Controls.Add(this.dateBox);
+            this.requestsTab.Controls.Add(this.reqTypeBox);
             this.requestsTab.Controls.Add(this.label11);
             this.requestsTab.Controls.Add(this.label15);
             this.requestsTab.Controls.Add(this.label16);
             this.requestsTab.Controls.Add(this.label17);
-            this.requestsTab.Controls.Add(this.comboBox14);
-            this.requestsTab.Controls.Add(this.comboBox10);
-            this.requestsTab.Controls.Add(this.button5);
+            this.requestsTab.Controls.Add(this.reqStatusBox);
+            this.requestsTab.Controls.Add(this.reqIdBox);
+            this.requestsTab.Controls.Add(this.setReqStatus);
             this.requestsTab.Location = new System.Drawing.Point(4, 22);
             this.requestsTab.Name = "requestsTab";
             this.requestsTab.Size = new System.Drawing.Size(798, 435);
@@ -428,17 +420,28 @@
             this.requestsTab.Text = "Заявки";
             this.requestsTab.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker4
+            // reqList
             // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(136, 214);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(121, 20);
-            this.dateTimePicker4.TabIndex = 43;
+            this.reqList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.reqList.Dock = System.Windows.Forms.DockStyle.Right;
+            this.reqList.Location = new System.Drawing.Point(439, 0);
+            this.reqList.Name = "reqList";
+            this.reqList.ReadOnly = true;
+            this.reqList.Size = new System.Drawing.Size(359, 435);
+            this.reqList.TabIndex = 44;
             // 
-            // comboBox13
+            // dateBox
             // 
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.dateBox.Location = new System.Drawing.Point(136, 214);
+            this.dateBox.Name = "dateBox";
+            this.dateBox.Size = new System.Drawing.Size(121, 20);
+            this.dateBox.TabIndex = 43;
+            // 
+            // reqTypeBox
+            // 
+            this.reqTypeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reqTypeBox.FormattingEnabled = true;
+            this.reqTypeBox.Items.AddRange(new object[] {
             "Студент-стипендия",
             "Студент-стипендия-последние",
             "Студент-стипендия-отклонён",
@@ -446,25 +449,16 @@
             "Студент-отчисление",
             "Методист-стипендия",
             "Методист-стипендия-мужчина"});
-            this.comboBox13.Location = new System.Drawing.Point(426, 29);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(121, 21);
-            this.comboBox13.TabIndex = 42;
-            // 
-            // dataGrid3
-            // 
-            this.dataGrid3.DataMember = "";
-            this.dataGrid3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dataGrid3.HeaderForeColor = System.Drawing.SystemColors.ControlText;
-            this.dataGrid3.Location = new System.Drawing.Point(553, 0);
-            this.dataGrid3.Name = "dataGrid3";
-            this.dataGrid3.Size = new System.Drawing.Size(245, 435);
-            this.dataGrid3.TabIndex = 41;
+            this.reqTypeBox.Location = new System.Drawing.Point(299, 29);
+            this.reqTypeBox.Name = "reqTypeBox";
+            this.reqTypeBox.Size = new System.Drawing.Size(121, 21);
+            this.reqTypeBox.TabIndex = 42;
+            this.reqTypeBox.SelectedIndexChanged += new System.EventHandler(this.reqTypeBox_SelectedIndexChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(446, 13);
+            this.label11.Location = new System.Drawing.Point(319, 13);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(70, 13);
             this.label11.TabIndex = 40;
@@ -498,60 +492,63 @@
             this.label17.TabIndex = 36;
             this.label17.Text = "ID Заявки";
             // 
-            // comboBox14
+            // reqStatusBox
             // 
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.reqStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reqStatusBox.FormattingEnabled = true;
+            this.reqStatusBox.Items.AddRange(new object[] {
             "В работе",
             "Выполнен",
             "Одобрен",
             "Отклонён"});
-            this.comboBox14.Location = new System.Drawing.Point(136, 166);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(121, 21);
-            this.comboBox14.TabIndex = 31;
+            this.reqStatusBox.Location = new System.Drawing.Point(136, 166);
+            this.reqStatusBox.Name = "reqStatusBox";
+            this.reqStatusBox.Size = new System.Drawing.Size(121, 21);
+            this.reqStatusBox.TabIndex = 31;
             // 
-            // comboBox10
+            // reqIdBox
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(136, 122);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(121, 21);
-            this.comboBox10.TabIndex = 31;
+            this.reqIdBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reqIdBox.FormattingEnabled = true;
+            this.reqIdBox.Location = new System.Drawing.Point(136, 122);
+            this.reqIdBox.Name = "reqIdBox";
+            this.reqIdBox.Size = new System.Drawing.Size(121, 21);
+            this.reqIdBox.TabIndex = 31;
             // 
-            // button5
+            // setReqStatus
             // 
-            this.button5.Location = new System.Drawing.Point(75, 268);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(121, 23);
-            this.button5.TabIndex = 28;
-            this.button5.Text = "Установить статус";
-            this.button5.UseVisualStyleBackColor = true;
+            this.setReqStatus.Location = new System.Drawing.Point(75, 268);
+            this.setReqStatus.Name = "setReqStatus";
+            this.setReqStatus.Size = new System.Drawing.Size(121, 23);
+            this.setReqStatus.TabIndex = 28;
+            this.setReqStatus.Text = "Установить статус";
+            this.setReqStatus.UseVisualStyleBackColor = true;
+            this.setReqStatus.Click += new System.EventHandler(this.setReqStatus_Click);
             // 
             // studentsTab
             // 
-            this.studentsTab.Controls.Add(this.dateTimePicker1);
-            this.studentsTab.Controls.Add(this.textBox7);
+            this.studentsTab.Controls.Add(this.groupChangeButton);
+            this.studentsTab.Controls.Add(this.groupList);
+            this.studentsTab.Controls.Add(this.date2Box);
+            this.studentsTab.Controls.Add(this.typeBox);
             this.studentsTab.Controls.Add(this.label7);
             this.studentsTab.Controls.Add(this.label10);
-            this.studentsTab.Controls.Add(this.textBox8);
-            this.studentsTab.Controls.Add(this.textBox1);
+            this.studentsTab.Controls.Add(this.orderNameBox);
+            this.studentsTab.Controls.Add(this.sumBox);
             this.studentsTab.Controls.Add(this.label14);
             this.studentsTab.Controls.Add(this.label18);
-            this.studentsTab.Controls.Add(this.comboBox6);
-            this.studentsTab.Controls.Add(this.button3);
+            this.studentsTab.Controls.Add(this.studentScholBox);
+            this.studentsTab.Controls.Add(this.setScholBut);
             this.studentsTab.Controls.Add(this.label34);
-            this.studentsTab.Controls.Add(this.dateTimePicker2);
-            this.studentsTab.Controls.Add(this.textBox4);
-            this.studentsTab.Controls.Add(this.dataGrid1);
-            this.studentsTab.Controls.Add(this.comboBox3);
-            this.studentsTab.Controls.Add(this.comboBox4);
-            this.studentsTab.Controls.Add(this.comboBox5);
-            this.studentsTab.Controls.Add(this.comboBox2);
-            this.studentsTab.Controls.Add(this.comboBox1);
-            this.studentsTab.Controls.Add(this.button15);
-            this.studentsTab.Controls.Add(this.button2);
-            this.studentsTab.Controls.Add(this.button1);
+            this.studentsTab.Controls.Add(this.dateBirthBox);
+            this.studentsTab.Controls.Add(this.fioBox);
+            this.studentsTab.Controls.Add(this.group3Box);
+            this.studentsTab.Controls.Add(this.sexBox);
+            this.studentsTab.Controls.Add(this.newGroupBox);
+            this.studentsTab.Controls.Add(this.groups2Box);
+            this.studentsTab.Controls.Add(this.studentGroupBox);
+            this.studentsTab.Controls.Add(this.addStudentButton);
+            this.studentsTab.Controls.Add(this.dropStudentButton);
             this.studentsTab.Controls.Add(this.label1);
             this.studentsTab.Controls.Add(this.label26);
             this.studentsTab.Controls.Add(this.label6);
@@ -566,19 +563,39 @@
             this.studentsTab.Text = "Студенты";
             this.studentsTab.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // groupChangeButton
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(97, 318);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(121, 20);
-            this.dateTimePicker1.TabIndex = 53;
+            this.groupChangeButton.Location = new System.Drawing.Point(350, 386);
+            this.groupChangeButton.Name = "groupChangeButton";
+            this.groupChangeButton.Size = new System.Drawing.Size(108, 23);
+            this.groupChangeButton.TabIndex = 55;
+            this.groupChangeButton.Text = "Изменить группу";
+            this.groupChangeButton.UseVisualStyleBackColor = true;
+            this.groupChangeButton.Click += new System.EventHandler(this.groupChangeButton_Click_1);
             // 
-            // textBox7
+            // groupList
             // 
-            this.textBox7.Location = new System.Drawing.Point(97, 266);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(121, 20);
-            this.textBox7.TabIndex = 50;
+            this.groupList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.groupList.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupList.Location = new System.Drawing.Point(477, 0);
+            this.groupList.Name = "groupList";
+            this.groupList.ReadOnly = true;
+            this.groupList.Size = new System.Drawing.Size(321, 435);
+            this.groupList.TabIndex = 54;
+            // 
+            // date2Box
+            // 
+            this.date2Box.Location = new System.Drawing.Point(97, 318);
+            this.date2Box.Name = "date2Box";
+            this.date2Box.Size = new System.Drawing.Size(121, 20);
+            this.date2Box.TabIndex = 53;
+            // 
+            // typeBox
+            // 
+            this.typeBox.Location = new System.Drawing.Point(97, 266);
+            this.typeBox.Name = "typeBox";
+            this.typeBox.Size = new System.Drawing.Size(121, 20);
+            this.typeBox.TabIndex = 50;
             // 
             // label7
             // 
@@ -598,19 +615,19 @@
             this.label10.TabIndex = 47;
             this.label10.Text = "Дата";
             // 
-            // textBox8
+            // orderNameBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(97, 344);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(121, 20);
-            this.textBox8.TabIndex = 51;
+            this.orderNameBox.Location = new System.Drawing.Point(97, 344);
+            this.orderNameBox.Name = "orderNameBox";
+            this.orderNameBox.Size = new System.Drawing.Size(121, 20);
+            this.orderNameBox.TabIndex = 51;
             // 
-            // textBox1
+            // sumBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(97, 292);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 52;
+            this.sumBox.Location = new System.Drawing.Point(97, 292);
+            this.sumBox.Name = "sumBox";
+            this.sumBox.Size = new System.Drawing.Size(121, 20);
+            this.sumBox.TabIndex = 52;
             // 
             // label14
             // 
@@ -630,22 +647,24 @@
             this.label18.TabIndex = 49;
             this.label18.Text = "Сумма";
             // 
-            // comboBox6
+            // studentScholBox
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(97, 239);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 21);
-            this.comboBox6.TabIndex = 45;
+            this.studentScholBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.studentScholBox.FormattingEnabled = true;
+            this.studentScholBox.Location = new System.Drawing.Point(97, 239);
+            this.studentScholBox.Name = "studentScholBox";
+            this.studentScholBox.Size = new System.Drawing.Size(121, 21);
+            this.studentScholBox.TabIndex = 45;
             // 
-            // button3
+            // setScholBut
             // 
-            this.button3.Location = new System.Drawing.Point(14, 387);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 23);
-            this.button3.TabIndex = 44;
-            this.button3.Text = "Назначить стипендию";
-            this.button3.UseVisualStyleBackColor = true;
+            this.setScholBut.Location = new System.Drawing.Point(14, 387);
+            this.setScholBut.Name = "setScholBut";
+            this.setScholBut.Size = new System.Drawing.Size(137, 23);
+            this.setScholBut.TabIndex = 44;
+            this.setScholBut.Text = "Назначить стипендию";
+            this.setScholBut.UseVisualStyleBackColor = true;
+            this.setScholBut.Click += new System.EventHandler(this.setScholBut_Click);
             // 
             // label34
             // 
@@ -656,102 +675,89 @@
             this.label34.TabIndex = 43;
             this.label34.Text = "Студент";
             // 
-            // dateTimePicker2
+            // dateBirthBox
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(97, 32);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(121, 20);
-            this.dateTimePicker2.TabIndex = 41;
+            this.dateBirthBox.Location = new System.Drawing.Point(97, 32);
+            this.dateBirthBox.Name = "dateBirthBox";
+            this.dateBirthBox.Size = new System.Drawing.Size(121, 20);
+            this.dateBirthBox.TabIndex = 41;
             // 
-            // textBox4
+            // fioBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(97, 6);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 20);
-            this.textBox4.TabIndex = 40;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.fioBox.Location = new System.Drawing.Point(97, 6);
+            this.fioBox.Name = "fioBox";
+            this.fioBox.Size = new System.Drawing.Size(121, 20);
+            this.fioBox.TabIndex = 40;
+            this.fioBox.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // dataGrid1
+            // group3Box
             // 
-            this.dataGrid1.DataMember = "";
-            this.dataGrid1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dataGrid1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
-            this.dataGrid1.Location = new System.Drawing.Point(477, 0);
-            this.dataGrid1.Name = "dataGrid1";
-            this.dataGrid1.Size = new System.Drawing.Size(321, 435);
-            this.dataGrid1.TabIndex = 12;
+            this.group3Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.group3Box.FormattingEnabled = true;
+            this.group3Box.Location = new System.Drawing.Point(350, 5);
+            this.group3Box.Name = "group3Box";
+            this.group3Box.Size = new System.Drawing.Size(121, 21);
+            this.group3Box.TabIndex = 11;
+            this.group3Box.SelectedIndexChanged += new System.EventHandler(this.group3Box_SelectedIndexChanged);
             // 
-            // comboBox3
+            // sexBox
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(350, 5);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 11;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.sexBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sexBox.FormattingEnabled = true;
+            this.sexBox.Items.AddRange(new object[] {
             "мужской",
             "женский"});
-            this.comboBox4.Location = new System.Drawing.Point(97, 58);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 11;
+            this.sexBox.Location = new System.Drawing.Point(97, 58);
+            this.sexBox.Name = "sexBox";
+            this.sexBox.Size = new System.Drawing.Size(121, 21);
+            this.sexBox.TabIndex = 11;
             // 
-            // comboBox5
+            // newGroupBox
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(350, 351);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 21);
-            this.comboBox5.TabIndex = 11;
+            this.newGroupBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.newGroupBox.FormattingEnabled = true;
+            this.newGroupBox.Location = new System.Drawing.Point(350, 351);
+            this.newGroupBox.Name = "newGroupBox";
+            this.newGroupBox.Size = new System.Drawing.Size(121, 21);
+            this.newGroupBox.TabIndex = 11;
             // 
-            // comboBox2
+            // groups2Box
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(97, 84);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 11;
+            this.groups2Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.groups2Box.FormattingEnabled = true;
+            this.groups2Box.Location = new System.Drawing.Point(97, 84);
+            this.groups2Box.Name = "groups2Box";
+            this.groups2Box.Size = new System.Drawing.Size(121, 21);
+            this.groups2Box.TabIndex = 11;
             // 
-            // comboBox1
+            // studentGroupBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(350, 324);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 11;
+            this.studentGroupBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.studentGroupBox.FormattingEnabled = true;
+            this.studentGroupBox.Location = new System.Drawing.Point(350, 324);
+            this.studentGroupBox.Name = "studentGroupBox";
+            this.studentGroupBox.Size = new System.Drawing.Size(121, 21);
+            this.studentGroupBox.TabIndex = 11;
             // 
-            // button15
+            // addStudentButton
             // 
-            this.button15.Location = new System.Drawing.Point(14, 128);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 23);
-            this.button15.TabIndex = 10;
-            this.button15.Text = "Зачислить";
-            this.button15.UseVisualStyleBackColor = true;
+            this.addStudentButton.Location = new System.Drawing.Point(14, 128);
+            this.addStudentButton.Name = "addStudentButton";
+            this.addStudentButton.Size = new System.Drawing.Size(75, 23);
+            this.addStudentButton.TabIndex = 10;
+            this.addStudentButton.Text = "Зачислить";
+            this.addStudentButton.UseVisualStyleBackColor = true;
+            this.addStudentButton.Click += new System.EventHandler(this.addStudentButton_Click);
             // 
-            // button2
+            // dropStudentButton
             // 
-            this.button2.Location = new System.Drawing.Point(350, 386);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 23);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Сменить группу";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(266, 386);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Отчислить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.dropStudentButton.Location = new System.Drawing.Point(266, 386);
+            this.dropStudentButton.Name = "dropStudentButton";
+            this.dropStudentButton.Size = new System.Drawing.Size(75, 23);
+            this.dropStudentButton.TabIndex = 10;
+            this.dropStudentButton.Text = "Отчислить";
+            this.dropStudentButton.UseVisualStyleBackColor = true;
+            this.dropStudentButton.Click += new System.EventHandler(this.dropStudentButton_Click);
             // 
             // label1
             // 
@@ -820,15 +826,15 @@
             // 
             // methodistsTab
             // 
-            this.methodistsTab.Controls.Add(this.dateTimePicker3);
-            this.methodistsTab.Controls.Add(this.textBox11);
-            this.methodistsTab.Controls.Add(this.textBox9);
-            this.methodistsTab.Controls.Add(this.textBox10);
-            this.methodistsTab.Controls.Add(this.dataGrid6);
-            this.methodistsTab.Controls.Add(this.comboBox16);
-            this.methodistsTab.Controls.Add(this.comboBox15);
-            this.methodistsTab.Controls.Add(this.button16);
-            this.methodistsTab.Controls.Add(this.button17);
+            this.methodistsTab.Controls.Add(this.sexMethBox);
+            this.methodistsTab.Controls.Add(this.methodistsList);
+            this.methodistsTab.Controls.Add(this.dateBirthMeth);
+            this.methodistsTab.Controls.Add(this.salaryBox);
+            this.methodistsTab.Controls.Add(this.methFioBox);
+            this.methodistsTab.Controls.Add(this.methTypeBox);
+            this.methodistsTab.Controls.Add(this.methodistsBox);
+            this.methodistsTab.Controls.Add(this.hireMeth);
+            this.methodistsTab.Controls.Add(this.dropMethodistButton);
             this.methodistsTab.Controls.Add(this.label28);
             this.methodistsTab.Controls.Add(this.label29);
             this.methodistsTab.Controls.Add(this.label30);
@@ -842,88 +848,86 @@
             this.methodistsTab.Text = "Методисты";
             this.methodistsTab.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker3
+            // methodistsList
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(96, 202);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(121, 20);
-            this.dateTimePicker3.TabIndex = 56;
+            this.methodistsList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.methodistsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.methodistsList.Dock = System.Windows.Forms.DockStyle.Right;
+            this.methodistsList.Location = new System.Drawing.Point(453, 0);
+            this.methodistsList.Name = "methodistsList";
+            this.methodistsList.ReadOnly = true;
+            this.methodistsList.Size = new System.Drawing.Size(345, 435);
+            this.methodistsList.TabIndex = 57;
             // 
-            // textBox11
+            // dateBirthMeth
             // 
-            this.textBox11.Location = new System.Drawing.Point(96, 254);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(121, 20);
-            this.textBox11.TabIndex = 54;
-            this.textBox11.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            this.dateBirthMeth.Location = new System.Drawing.Point(96, 202);
+            this.dateBirthMeth.Name = "dateBirthMeth";
+            this.dateBirthMeth.Size = new System.Drawing.Size(121, 20);
+            this.dateBirthMeth.TabIndex = 56;
             // 
-            // textBox9
+            // salaryBox
             // 
-            this.textBox9.Location = new System.Drawing.Point(96, 228);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(121, 20);
-            this.textBox9.TabIndex = 54;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            this.salaryBox.Location = new System.Drawing.Point(96, 254);
+            this.salaryBox.Name = "salaryBox";
+            this.salaryBox.Size = new System.Drawing.Size(121, 20);
+            this.salaryBox.TabIndex = 54;
+            this.salaryBox.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
-            // textBox10
+            // methFioBox
             // 
-            this.textBox10.Location = new System.Drawing.Point(96, 176);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(121, 20);
-            this.textBox10.TabIndex = 55;
+            this.methFioBox.Location = new System.Drawing.Point(96, 176);
+            this.methFioBox.Name = "methFioBox";
+            this.methFioBox.Size = new System.Drawing.Size(121, 20);
+            this.methFioBox.TabIndex = 55;
             // 
-            // dataGrid6
+            // methTypeBox
             // 
-            this.dataGrid6.DataMember = "";
-            this.dataGrid6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dataGrid6.HeaderForeColor = System.Drawing.SystemColors.ControlText;
-            this.dataGrid6.Location = new System.Drawing.Point(556, 0);
-            this.dataGrid6.Name = "dataGrid6";
-            this.dataGrid6.Size = new System.Drawing.Size(242, 435);
-            this.dataGrid6.TabIndex = 53;
-            // 
-            // comboBox16
-            // 
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Items.AddRange(new object[] {
+            this.methTypeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.methTypeBox.FormattingEnabled = true;
+            this.methTypeBox.Items.AddRange(new object[] {
             "Все",
             "Выполнивший больше всех заданий",
             "Не выполнившие ни одного задания"});
-            this.comboBox16.Location = new System.Drawing.Point(423, 32);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(121, 21);
-            this.comboBox16.TabIndex = 52;
+            this.methTypeBox.Location = new System.Drawing.Point(245, 32);
+            this.methTypeBox.Name = "methTypeBox";
+            this.methTypeBox.Size = new System.Drawing.Size(202, 21);
+            this.methTypeBox.TabIndex = 52;
+            this.methTypeBox.SelectedIndexChanged += new System.EventHandler(this.methTypeBox_SelectedIndexChanged);
             // 
-            // comboBox15
+            // methodistsBox
             // 
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(96, 32);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(121, 21);
-            this.comboBox15.TabIndex = 52;
+            this.methodistsBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.methodistsBox.FormattingEnabled = true;
+            this.methodistsBox.Location = new System.Drawing.Point(72, 32);
+            this.methodistsBox.Name = "methodistsBox";
+            this.methodistsBox.Size = new System.Drawing.Size(121, 21);
+            this.methodistsBox.TabIndex = 52;
             // 
-            // button16
+            // hireMeth
             // 
-            this.button16.Location = new System.Drawing.Point(13, 298);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(114, 23);
-            this.button16.TabIndex = 48;
-            this.button16.Text = "Принять на работу";
-            this.button16.UseVisualStyleBackColor = true;
+            this.hireMeth.Location = new System.Drawing.Point(13, 298);
+            this.hireMeth.Name = "hireMeth";
+            this.hireMeth.Size = new System.Drawing.Size(114, 23);
+            this.hireMeth.TabIndex = 48;
+            this.hireMeth.Text = "Принять на работу";
+            this.hireMeth.UseVisualStyleBackColor = true;
+            this.hireMeth.Click += new System.EventHandler(this.hireMeth_Click);
             // 
-            // button17
+            // dropMethodistButton
             // 
-            this.button17.Location = new System.Drawing.Point(12, 69);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 23);
-            this.button17.TabIndex = 49;
-            this.button17.Text = "Уволить";
-            this.button17.UseVisualStyleBackColor = true;
+            this.dropMethodistButton.Location = new System.Drawing.Point(12, 69);
+            this.dropMethodistButton.Name = "dropMethodistButton";
+            this.dropMethodistButton.Size = new System.Drawing.Size(75, 23);
+            this.dropMethodistButton.TabIndex = 49;
+            this.dropMethodistButton.Text = "Уволить";
+            this.dropMethodistButton.UseVisualStyleBackColor = true;
+            this.dropMethodistButton.Click += new System.EventHandler(this.dropMethodistButton_Click);
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(480, 10);
+            this.label28.Location = new System.Drawing.Point(383, 10);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(64, 13);
             this.label28.TabIndex = 42;
@@ -976,17 +980,17 @@
             // 
             // tasksTab
             // 
-            this.tasksTab.Controls.Add(this.dateTimePicker5);
-            this.tasksTab.Controls.Add(this.textBox6);
+            this.tasksTab.Controls.Add(this.tasksList);
+            this.tasksTab.Controls.Add(this.dateTaskBox);
+            this.tasksTab.Controls.Add(this.causeTaskBox);
             this.tasksTab.Controls.Add(this.label2);
             this.tasksTab.Controls.Add(this.label3);
-            this.tasksTab.Controls.Add(this.textBox5);
+            this.tasksTab.Controls.Add(this.sumTaskBox);
             this.tasksTab.Controls.Add(this.label4);
-            this.tasksTab.Controls.Add(this.comboBox11);
-            this.tasksTab.Controls.Add(this.button6);
+            this.tasksTab.Controls.Add(this.students2Box);
+            this.tasksTab.Controls.Add(this.newTaskButton);
             this.tasksTab.Controls.Add(this.label5);
             this.tasksTab.Controls.Add(this.label19);
-            this.tasksTab.Controls.Add(this.dataGrid4);
             this.tasksTab.Location = new System.Drawing.Point(4, 22);
             this.tasksTab.Name = "tasksTab";
             this.tasksTab.Size = new System.Drawing.Size(798, 435);
@@ -995,19 +999,19 @@
             this.tasksTab.UseVisualStyleBackColor = true;
             this.tasksTab.Click += new System.EventHandler(this.tasksTab_Click);
             // 
-            // dateTimePicker5
+            // dateTaskBox
             // 
-            this.dateTimePicker5.Location = new System.Drawing.Point(221, 239);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(121, 20);
-            this.dateTimePicker5.TabIndex = 38;
+            this.dateTaskBox.Location = new System.Drawing.Point(221, 239);
+            this.dateTaskBox.Name = "dateTaskBox";
+            this.dateTaskBox.Size = new System.Drawing.Size(121, 20);
+            this.dateTaskBox.TabIndex = 38;
             // 
-            // textBox6
+            // causeTaskBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(221, 188);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(121, 20);
-            this.textBox6.TabIndex = 36;
+            this.causeTaskBox.Location = new System.Drawing.Point(221, 188);
+            this.causeTaskBox.Name = "causeTaskBox";
+            this.causeTaskBox.Size = new System.Drawing.Size(121, 20);
+            this.causeTaskBox.TabIndex = 36;
             // 
             // label2
             // 
@@ -1027,12 +1031,12 @@
             this.label3.TabIndex = 34;
             this.label3.Text = "Дата";
             // 
-            // textBox5
+            // sumTaskBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(221, 141);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(121, 20);
-            this.textBox5.TabIndex = 37;
+            this.sumTaskBox.Location = new System.Drawing.Point(221, 141);
+            this.sumTaskBox.Name = "sumTaskBox";
+            this.sumTaskBox.Size = new System.Drawing.Size(121, 20);
+            this.sumTaskBox.TabIndex = 37;
             // 
             // label4
             // 
@@ -1043,22 +1047,24 @@
             this.label4.TabIndex = 35;
             this.label4.Text = "Сумма";
             // 
-            // comboBox11
+            // students2Box
             // 
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(221, 92);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(121, 21);
-            this.comboBox11.TabIndex = 31;
+            this.students2Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.students2Box.FormattingEnabled = true;
+            this.students2Box.Location = new System.Drawing.Point(221, 92);
+            this.students2Box.Name = "students2Box";
+            this.students2Box.Size = new System.Drawing.Size(121, 21);
+            this.students2Box.TabIndex = 31;
             // 
-            // button6
+            // newTaskButton
             // 
-            this.button6.Location = new System.Drawing.Point(100, 292);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(148, 23);
-            this.button6.TabIndex = 28;
-            this.button6.Text = "Сформировать задание";
-            this.button6.UseVisualStyleBackColor = true;
+            this.newTaskButton.Location = new System.Drawing.Point(100, 292);
+            this.newTaskButton.Name = "newTaskButton";
+            this.newTaskButton.Size = new System.Drawing.Size(148, 23);
+            this.newTaskButton.TabIndex = 28;
+            this.newTaskButton.Text = "Сформировать задание";
+            this.newTaskButton.UseVisualStyleBackColor = true;
+            this.newTaskButton.Click += new System.EventHandler(this.newTaskButton_Click);
             // 
             // label5
             // 
@@ -1078,15 +1084,44 @@
             this.label19.TabIndex = 26;
             this.label19.Text = "Студент";
             // 
-            // dataGrid4
+            // dataSet
             // 
-            this.dataGrid4.DataMember = "";
-            this.dataGrid4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dataGrid4.HeaderForeColor = System.Drawing.SystemColors.ControlText;
-            this.dataGrid4.Location = new System.Drawing.Point(500, 0);
-            this.dataGrid4.Name = "dataGrid4";
-            this.dataGrid4.Size = new System.Drawing.Size(298, 435);
-            this.dataGrid4.TabIndex = 21;
+            this.dataSet.DataSetName = "dataSet";
+            this.dataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sexMethBox
+            // 
+            this.sexMethBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sexMethBox.FormattingEnabled = true;
+            this.sexMethBox.Items.AddRange(new object[] {
+            "мужской",
+            "женский"});
+            this.sexMethBox.Location = new System.Drawing.Point(96, 227);
+            this.sexMethBox.Name = "sexMethBox";
+            this.sexMethBox.Size = new System.Drawing.Size(121, 21);
+            this.sexMethBox.TabIndex = 58;
+            // 
+            // tasksList
+            // 
+            this.tasksList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.tasksList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tasksList.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tasksList.Location = new System.Drawing.Point(500, 0);
+            this.tasksList.Name = "tasksList";
+            this.tasksList.ReadOnly = true;
+            this.tasksList.Size = new System.Drawing.Size(298, 435);
+            this.tasksList.TabIndex = 39;
+            // 
+            // mainGrid
+            // 
+            this.mainGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.mainGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.mainGrid.Dock = System.Windows.Forms.DockStyle.Right;
+            this.mainGrid.Location = new System.Drawing.Point(499, 3);
+            this.mainGrid.Name = "mainGrid";
+            this.mainGrid.ReadOnly = true;
+            this.mainGrid.Size = new System.Drawing.Size(296, 429);
+            this.mainGrid.TabIndex = 49;
             // 
             // DirectorForm
             // 
@@ -1100,19 +1135,20 @@
             this.generalTab.ResumeLayout(false);
             this.statisticsTab.ResumeLayout(false);
             this.statisticsTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid5)).EndInit();
             this.requestsTab.ResumeLayout(false);
             this.requestsTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reqList)).EndInit();
             this.studentsTab.ResumeLayout(false);
             this.studentsTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupList)).EndInit();
             this.methodistsTab.ResumeLayout(false);
             this.methodistsTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.methodistsList)).EndInit();
             this.tasksTab.ResumeLayout(false);
             this.tasksTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tasksList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1123,96 +1159,96 @@
         private System.Windows.Forms.TabPage generalTab;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TabPage statisticsTab;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox numBoysBox;
+        private System.Windows.Forms.TextBox numGirlsBox;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGrid dataGrid5;
+        private System.Windows.Forms.Button more2FreeButton;
+        private System.Windows.Forms.Button threeButton;
+        private System.Windows.Forms.Button studsScholsButton;
+        private System.Windows.Forms.Button mathPhysButton;
+        private System.Windows.Forms.Button highestNumDropButton;
+        private System.Windows.Forms.Button wantCGButton;
+        private System.Windows.Forms.Button only45Button;
+        private System.Windows.Forms.Button highScholButton;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.TextBox averageGradeBox;
+        private System.Windows.Forms.ComboBox groupsBox;
+        private System.Windows.Forms.ComboBox studentsBox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TabPage requestsTab;
-        private System.Windows.Forms.DataGrid dataGrid3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.ComboBox reqIdBox;
+        private System.Windows.Forms.Button setReqStatus;
         private System.Windows.Forms.TabPage studentsTab;
-        private System.Windows.Forms.DataGrid dataGrid1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox group3Box;
+        private System.Windows.Forms.ComboBox groups2Box;
+        private System.Windows.Forms.ComboBox studentGroupBox;
+        private System.Windows.Forms.Button dropStudentButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage tasksTab;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ComboBox students2Box;
+        private System.Windows.Forms.Button newTaskButton;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.DataGrid dataGrid4;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.DateTimePicker dateBirthBox;
+        private System.Windows.Forms.TextBox fioBox;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button addStudentButton;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TabPage methodistsTab;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.DataGrid dataGrid6;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.DateTimePicker dateBirthMeth;
+        private System.Windows.Forms.TextBox methFioBox;
+        private System.Windows.Forms.ComboBox methodistsBox;
+        private System.Windows.Forms.Button hireMeth;
+        private System.Windows.Forms.Button dropMethodistButton;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.ComboBox reqTypeBox;
+        private System.Windows.Forms.TextBox salaryBox;
+        private System.Windows.Forms.DateTimePicker dateBox;
+        private System.Windows.Forms.ComboBox reqStatusBox;
+        private System.Windows.Forms.ComboBox methTypeBox;
+        private System.Windows.Forms.DateTimePicker dateTaskBox;
+        private System.Windows.Forms.TextBox causeTaskBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox sumTaskBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox sexBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox newGroupBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.DateTimePicker date2Box;
+        private System.Windows.Forms.TextBox typeBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox orderNameBox;
+        private System.Windows.Forms.TextBox sumBox;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox studentScholBox;
+        private System.Windows.Forms.Button setScholBut;
         private System.Windows.Forms.Label label34;
+        private dataSet dataSet;
+        private System.Windows.Forms.DataGridView reqList;
+        private System.Windows.Forms.DataGridView groupList;
+        private System.Windows.Forms.Button groupChangeButton;
+        private System.Windows.Forms.DataGridView methodistsList;
+        private System.Windows.Forms.ComboBox sexMethBox;
+        private System.Windows.Forms.DataGridView tasksList;
+        private System.Windows.Forms.DataGridView mainGrid;
     }
 }

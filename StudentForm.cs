@@ -451,6 +451,16 @@ namespace course_project
         private void label16_Click(object sender, EventArgs e)
         {
 
-        }        
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void scheduleList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

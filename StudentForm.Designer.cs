@@ -156,6 +156,7 @@
             this.scheduleList.ReadOnly = true;
             this.scheduleList.Size = new System.Drawing.Size(296, 478);
             this.scheduleList.TabIndex = 6;
+            this.scheduleList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.scheduleList_CellContentClick);
             // 
             // groupList
             // 
@@ -225,6 +226,7 @@
             this.label4.Size = new System.Drawing.Size(96, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "Выберите группу:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label7
             // 
