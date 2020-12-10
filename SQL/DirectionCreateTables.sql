@@ -1,0 +1,305 @@
+USE Direction;
+
+DROP TABLE IF EXISTS Sex
+CREATE TABLE Sex (
+	SexID int PRIMARY KEY NOT NULL,
+	Naming varchar(10) NOT NULL
+)
+ALTER TABLE Sex DROP CONSTRAINT PK__Sex__75622DB607E8219F
+ALTER TABLE Sex
+DROP COLUMN SexID;
+ALTER TABLE Sex
+ADD SexID int IDENTITY(1,1) PRIMARY KEY;
+
+
+DROP TABLE IF EXISTS Groups
+CREATE TABLE Groups (
+	GroupID int PRIMARY KEY NOT NULL,
+	Naming varchar(20) NOT NULL
+	--ElderID int FOREIGN KEY REFERENCES Students
+	--ON DELETE SET NULL
+)
+--ALTER TABLE Groups DROP CONSTRAINT PK__Sex__75622DB607E8219F
+--ALTER TABLE Groups
+--DROP COLUMN GroupID;
+--ALTER TABLE Groups
+--ADD GroupID int IDENTITY(1,1) PRIMARY KEY;
+
+
+DROP TABLE IF EXISTS ScholarshipOrders
+CREATE TABLE ScholarshipOrders (
+	ScholOrderID int PRIMARY KEY NOT NULL,
+	Naming varchar(30) NOT NULL,
+	Summ int NOT NULL,
+	DateStarted date,
+	OrderName varchar(20) NOT NULL
+)
+ALTER TABLE ScholarshipOrders DROP CONSTRAINT PK__Scholars__9DB2C3F83884270D
+ALTER TABLE ScholarshipOrders
+DROP COLUMN ScholOrderID;
+ALTER TABLE ScholarshipOrders
+ADD ScholOrderID int IDENTITY(1,1) PRIMARY KEY;
+
+
+DROP TABLE IF EXISTS Students
+CREATE TABLE Students (
+	StudentID int PRIMARY KEY NOT NULL,
+	FIO varchar(70) NOT NULL,
+	Birthday date,
+	SexID int FOREIGN KEY REFERENCES Sex
+		ON UPDATE CASCADE,
+	GroupID int FOREIGN KEY REFERENCES Groups
+		ON DELETE SET NULL
+		ON UPDATE CASCADE,
+	ScholarshipOrderID int FOREIGN KEY REFERENCES ScholarshipOrders
+		ON DELETE SET NULL
+		ON UPDATE CASCADE
+)
+ALTER TABLE Students DROP CONSTRAINT FK__Students__SexID__37A5467C
+--ALTER TABLE Students
+--DROP COLUMN SexID;
+ALTER TABLE Students ADD CONSTRAINT FK__Students__SexID__37A5467C FOREIGN KEY (SexID)
+	REFERENCES Sex (SexID)
+      ON UPDATE CASCADE
+ALTER TABLE Students DROP CONSTRAINT FK__Students__Schola__398D8EEE
+ALTER TABLE Students ADD CONSTRAINT FK__Students__Schola__398D8EEE FOREIGN KEY (ScholarshipOrderID)
+	REFERENCES ScholarshipOrders (ScholOrderID)
+      ON DELETE SET NULL
+	  ON UPDATE CASCADE
+ALTER TABLE Students DROP CONSTRAINT PK__Students__32C52A7955C9655D
+ALTER TABLE Students
+DROP COLUMN StudentID;
+ALTER TABLE Students
+ADD StudentID int IDENTITY(1,1) PRIMARY KEY;
+
+ALTER TABLE Students
+ADD Pwd varchar(50);
+
+
+ALTER TABLE Groups
+	ADD ElderID int FOREIGN KEY
+	REFERENCES Students (StudentID);
+
+ALTER TABLE Groups DROP CONSTRAINT FK__Groups__ElderID__3A81B327
+ALTER TABLE Groups ADD CONSTRAINT FK__Groups__ElderID__3A81B327 FOREIGN KEY (ElderID)
+	REFERENCES Students (StudentID)
+
+
+
+CREATE TABLE Methodists (
+	MethodistID int PRIMARY KEY NOT NULL,
+	FIO varchar(70) NOT NULL,
+	Birthday date,
+	SexID int FOREIGN KEY REFERENCES Sex
+		ON UPDATE CASCADE,
+	Salary int
+)
+ALTER TABLE Methodists DROP CONSTRAINT FK__Methodist__SexID__3D5E1FD2
+--ALTER TABLE Methodists -- from here we know the name of 
+--DROP COLUMN SexID; -- foreign key constraint: FK__Methodist__SexID__3D5E1FD2
+ALTER TABLE Methodists ADD CONSTRAINT FK__Methodist__SexID__3D5E1FD2 FOREIGN KEY (SexID)
+	REFERENCES Sex (SexID)
+      ON UPDATE CASCADE
+ALTER TABLE Methodists DROP CONSTRAINT PK__Methodis__B08972AC106C4146
+ALTER TABLE Methodists
+DROP COLUMN MethodistID;
+ALTER TABLE Methodists
+ADD MethodistID int IDENTITY(1,1) PRIMARY KEY;
+
+ALTER TABLE Methodists
+ADD Pwd varchar(50);
+
+
+CREATE TABLE Disciplines (
+	DisciplineID int PRIMARY KEY NOT NULL,
+	Naming varchar(50) NOT NULL
+)
+
+DROP TABLE IF EXISTS ClassesTypes
+CREATE TABLE ClassesTypes (
+	TypeID int PRIMARY KEY NOT NULL,
+	Naming varchar(20) NOT NULL
+)
+
+DROP TABLE IF EXISTS Dayss
+CREATE TABLE Dayss (
+	DayID int PRIMARY KEY NOT NULL,
+	DayNaming varchar(15) NOT NULL
+)
+
+DROP TABLE IF EXISTS Schedule
+CREATE TABLE Schedule (
+	ItemID int PRIMARY KEY NOT NULL,
+	DayOfWeekID int FOREIGN KEY REFERENCES Dayss
+		ON DELETE SET NULL
+		ON UPDATE CASCADE,
+	DisciplineID int FOREIGN KEY REFERENCES Disciplines
+		ON DELETE SET NULL
+		ON UPDATE CASCADE,
+	TimeLine varchar(20),
+	GroupID int FOREIGN KEY REFERENCES Groups
+		ON DELETE SET NULL
+		ON UPDATE CASCADE,
+	Room int,
+	TypeID int FOREIGN KEY REFERENCES ClassesTypes
+		ON DELETE SET NULL
+		ON UPDATE CASCADE
+)
+ALTER TABLE Schedule DROP CONSTRAINT PK__Schedule__727E83EBDC1D9FB9
+ALTER TABLE Schedule
+DROP COLUMN ItemID;
+ALTER TABLE Schedule
+ADD ItemID int IDENTITY(1,1) PRIMARY KEY;
+
+
+CREATE TABLE Statuses (
+	StatusID int PRIMARY KEY NOT NULL,
+	Naming varchar(10) NOT NULL
+)
+
+CREATE TABLE DirectorInstructions (
+	InstructionID int PRIMARY KEY NOT NULL,
+	MethodistID int FOREIGN KEY REFERENCES Methodists
+		ON DELETE SET NULL
+		ON UPDATE CASCADE,
+	StudentID int FOREIGN KEY REFERENCES Students,
+	Summ int NOT NULL,
+	Cause varchar(100),
+	DateIssued date NOT NULL,
+	DateCompleted date,
+	StatusID int FOREIGN KEY REFERENCES Statuses
+		ON DELETE SET NULL
+		ON UPDATE CASCADE
+)
+ALTER TABLE DirectorInstructions DROP CONSTRAINT PK__Director__CE0694517C6BCECA
+ALTER TABLE DirectorInstructions
+DROP COLUMN InstructionID;
+ALTER TABLE DirectorInstructions
+ADD InstructionID int IDENTITY(1,1) PRIMARY KEY;
+ALTER TABLE DirectorInstructions DROP CONSTRAINT FK__DirectorI__Stude__5629CD9C
+ALTER TABLE DirectorInstructions ADD CONSTRAINT FK__DirectorI__Stude__5629CD9C FOREIGN KEY (StudentID)
+	REFERENCES Students (StudentID)
+ALTER TABLE DirectorInstructions DROP CONSTRAINT FK__DirectorI__Metho__5535A963
+ALTER TABLE DirectorInstructions ADD CONSTRAINT FK__DirectorI__Metho__5535A963 FOREIGN KEY (MethodistID)
+	REFERENCES Methodists (MethodistID)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE
+
+CREATE TABLE RequestsScholarship (
+	RequestID int PRIMARY KEY NOT NULL,
+	StudentID int FOREIGN KEY REFERENCES Students
+		ON DELETE SET NULL
+		ON UPDATE CASCADE,
+	Summ int NOT NULL,
+	Cause varchar(100),
+	DateIssued date NOT NULL,
+	DateAcceptedOrRejected date,
+	StatusID int FOREIGN KEY REFERENCES Statuses
+		ON DELETE SET NULL
+		ON UPDATE CASCADE
+)
+ALTER TABLE RequestsScholarship DROP CONSTRAINT PK__Requests__33A8519A4149C9AB
+ALTER TABLE RequestsScholarship
+DROP COLUMN RequestID;
+ALTER TABLE RequestsScholarship
+ADD RequestID int IDENTITY(1,1) PRIMARY KEY;
+ALTER TABLE RequestsScholarship DROP CONSTRAINT FK__RequestsS__Stude__59FA5E80
+ALTER TABLE RequestsScholarship ADD CONSTRAINT FK__RequestsS__Stude__59FA5E80 FOREIGN KEY (StudentID)
+	REFERENCES Students (StudentID)
+      ON DELETE SET NULL
+	  ON UPDATE CASCADE
+
+CREATE TABLE RequestsScholarshipM (
+	RequestID int PRIMARY KEY NOT NULL,
+	MethodistID int FOREIGN KEY REFERENCES Methodists
+		ON DELETE SET NULL
+		ON UPDATE CASCADE,
+	StudentID int FOREIGN KEY REFERENCES Students,
+	Summ int NOT NULL,
+	Cause varchar(100),
+	DateIssued date NOT NULL,
+	DateAcceptedOrRejected date,
+	StatusID int FOREIGN KEY REFERENCES Statuses
+		ON DELETE SET NULL
+		ON UPDATE CASCADE
+)
+ALTER TABLE RequestsScholarshipM DROP CONSTRAINT PK__Requests__33A8519A319B8BA4
+ALTER TABLE RequestsScholarshipM
+DROP COLUMN RequestID;
+ALTER TABLE RequestsScholarshipM
+ADD RequestID int IDENTITY(1,1) PRIMARY KEY;
+ALTER TABLE RequestsScholarshipM DROP CONSTRAINT FK__RequestsS__Stude__628FA481
+ALTER TABLE RequestsScholarshipM ADD CONSTRAINT FK__RequestsS__Stude__628FA481 FOREIGN KEY (StudentID)
+	REFERENCES Students (StudentID)
+ALTER TABLE RequestsScholarshipM DROP CONSTRAINT FK__RequestsS__Metho__619B8048
+ALTER TABLE RequestsScholarshipM ADD CONSTRAINT FK__RequestsS__Metho__619B8048 FOREIGN KEY (MethodistID)
+	REFERENCES Methodists (MethodistID)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE
+
+
+CREATE TABLE RequestsDropOut (
+	RequestID int PRIMARY KEY NOT NULL,
+	StudentID int FOREIGN KEY REFERENCES Students
+		ON DELETE SET NULL
+		ON UPDATE CASCADE,
+	Cause varchar(100),
+	DateIssued date NOT NULL,
+	DateAcceptedOrRejected date,
+	StatusID int FOREIGN KEY REFERENCES Statuses
+		ON DELETE SET NULL
+		ON UPDATE CASCADE
+)
+ALTER TABLE RequestsDropOut DROP CONSTRAINT PK__Requests__33A8519A1288C721
+ALTER TABLE RequestsDropOut
+DROP COLUMN RequestID;
+ALTER TABLE RequestsDropOut
+ADD RequestID int IDENTITY(1,1) PRIMARY KEY;
+ALTER TABLE RequestsDropOut DROP CONSTRAINT FK__RequestsD__Stude__66603565
+ALTER TABLE RequestsDropOut ADD CONSTRAINT FK__RequestsD__Stude__66603565 FOREIGN KEY (StudentID)
+	REFERENCES Students (StudentID)
+	ON DELETE SET NULL
+	ON UPDATE CASCADE
+
+CREATE TABLE RequestsGroupChange (
+	RequestID int PRIMARY KEY NOT NULL,
+	StudentID int FOREIGN KEY REFERENCES Students,
+	OldGroupID int FOREIGN KEY REFERENCES Groups,
+	NewGroupID int FOREIGN KEY REFERENCES Groups,
+	Cause varchar(100),
+	DateIssued date NOT NULL,
+	DateAcceptedOrRejected date,
+	StatusID int FOREIGN KEY REFERENCES Statuses
+		ON DELETE SET NULL
+		ON UPDATE CASCADE
+)
+ALTER TABLE RequestsGroupChange DROP CONSTRAINT PK__Requests__33A8519AB053A488
+ALTER TABLE RequestsGroupChange
+DROP COLUMN RequestID;
+ALTER TABLE RequestsGroupChange
+ADD RequestID int IDENTITY(1,1) PRIMARY KEY;
+ALTER TABLE RequestsGroupChange DROP CONSTRAINT FK__RequestsG__Stude__72C60C4A
+ALTER TABLE RequestsGroupChange ADD CONSTRAINT FK__RequestsG__Stude__72C60C4A FOREIGN KEY (StudentID)
+	REFERENCES Students (StudentID)
+
+
+DROP TABLE IF EXISTS Grades
+CREATE TABLE Grades (
+	GradeID int PRIMARY KEY NOT NULL,
+	DisciplineID int NOT NULL FOREIGN KEY REFERENCES Disciplines,
+	StudentID int NOT NULL FOREIGN KEY REFERENCES Students,
+	Valuee float NOT NULL 
+)
+ALTER TABLE Grades DROP CONSTRAINT FK__Grades__StudentI__07C12930
+ALTER TABLE Grades ADD CONSTRAINT FK__Grades__StudentI__07C12930 FOREIGN KEY (StudentID)
+	REFERENCES Students (StudentID)
+
+
+CREATE TABLE Director (
+	DirectorID int IDENTITY(1,1) PRIMARY KEY,
+	FIO varchar(70) NOT NULL,
+	Birthday date,
+	SexID int FOREIGN KEY REFERENCES Sex
+		ON UPDATE CASCADE,
+	Pwd varchar(50) NOT NULL
+)
