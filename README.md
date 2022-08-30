@@ -1,4 +1,4 @@
-# MS-SQL-DB-course-project
+# Dean-Office-Automation
 # Курсовой проект в СПбПУ Петра Великого по дисциплине "Базы Данных"
 Технологический стек: MS SQL Server + Windows Forms | Visual C#.  
 Скрипты создания БД и запросы - в папке SQL.  
